@@ -34,9 +34,9 @@ public class TypeParameterResolver {
      *         they will be resolved to the actual runtime {@link Type}s.
      */
     public static Type resolveFieldType(Field field, Type srcType) {
-        Type fieldType = field.getGenericType();
+        Type fieldType = field.getGenericType(); // T
         Class<?> declaringClass = field.getDeclaringClass();
-        return resolveType(fieldType, srcType, declaringClass);
+        return resolveType(fieldType, srcType, declaringClass); // src可能是declaringClass的子类
     }
 
     /**
