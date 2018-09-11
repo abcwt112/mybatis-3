@@ -17,14 +17,14 @@
 drop table users if exists;
 
 create table users (
-  id int,
-  name varchar(20),
+  id       int,
+  name     varchar(20),
   group_id int,
-  state varchar(20)
+  state    varchar(20)
 );
 
 create table groups (
-  id int,
+  id    int,
   state varchar(20)
 );
 

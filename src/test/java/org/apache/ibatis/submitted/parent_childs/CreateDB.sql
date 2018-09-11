@@ -17,16 +17,16 @@
 drop table users if exists;
 
 create table Parent (
-  id int,
-  Name varchar(20),
+  id      int,
+  Name    varchar(20),
   SurName varchar(20)
 );
 
 create table Child (
-  id int,
-  Name varchar(20),
-  SurName varchar(20),
-  Age int,
+  id       int,
+  Name     varchar(20),
+  SurName  varchar(20),
+  Age      int,
   ParentId varchar(20)
 );
 

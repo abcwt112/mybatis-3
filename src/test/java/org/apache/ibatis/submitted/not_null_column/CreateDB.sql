@@ -15,12 +15,12 @@
 --
 
 create table Child (
-  id int,
-  name varchar(100),
+  id        int,
+  name      varchar(100),
   father_id int
 );
 create table Father (
-  id int,
+  id   int,
   name varchar(100)
 );
 

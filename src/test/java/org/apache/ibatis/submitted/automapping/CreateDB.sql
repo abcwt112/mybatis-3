@@ -19,34 +19,34 @@ drop table users if exists;
 drop table books if exists;
 
 create table users (
-  id int,
+  id   int,
   name varchar(20)
 );
 
 create table books (
   version int,
-  name varchar(20)
+  name    varchar(20)
 );
 
 create table pets (
-  id int,
-  owner int,
+  id      int,
+  owner   int,
   breeder int,
-  name varchar(20)
+  name    varchar(20)
 );
 
 create table breeder (
-  id int,
+  id   int,
   name varchar(20)
 );
 
-insert into users (id, name) values(1, 'User1');
-insert into users (id, name) values(2, 'User2');
+insert into users (id, name) values (1, 'User1');
+insert into users (id, name) values (2, 'User2');
 
-insert into books (version, name) values(99, 'Learn Java');
+insert into books (version, name) values (99, 'Learn Java');
 
-insert into pets (id, owner, breeder, name) values(11, 1, null, 'Ren');
-insert into pets (id, owner, breeder, name) values(12, 2, 101, 'Chien');
-insert into pets (id, owner, breeder, name) values(13, 2, null, 'Kotetsu');
+insert into pets (id, owner, breeder, name) values (11, 1, null, 'Ren');
+insert into pets (id, owner, breeder, name) values (12, 2, 101, 'Chien');
+insert into pets (id, owner, breeder, name) values (13, 2, null, 'Kotetsu');
 
-insert into breeder (id, name) values(101, 'John');
+insert into breeder (id, name) values (101, 'John');

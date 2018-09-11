@@ -15,12 +15,12 @@
 --
 
 create table person (
-  id int,
-  firstName varchar(100),
-  lastName varchar(100),
-  jobTitle varchar(100),
-  department varchar(100),
-  personType varchar(100) DEFAULT NULL,
+  id           int,
+  firstName    varchar(100),
+  lastName     varchar(100),
+  jobTitle     varchar(100),
+  department   varchar(100),
+  personType   varchar(100) DEFAULT NULL,
   employeeType varchar(100) DEFAULT NULL
 );
 

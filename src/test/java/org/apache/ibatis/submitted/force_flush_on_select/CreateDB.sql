@@ -14,12 +14,12 @@
 --    limitations under the License.
 --
 
- DROP TABLE person;
+DROP TABLE person;
 
- CREATE TABLE person (
-  id int,
+CREATE TABLE person (
+  id        int,
   firstName varchar(100),
-  lastName varchar(100)
+  lastName  varchar(100)
 );
 
 INSERT INTO person (id, firstName, lastName)

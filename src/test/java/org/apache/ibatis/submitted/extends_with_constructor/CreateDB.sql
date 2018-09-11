@@ -15,12 +15,12 @@
 --
 
 create table student (
-  id int,
-  name varchar(100),
+  id         int,
+  name       varchar(100),
   teacher_id int
 );
 create table teacher (
-  id int,
+  id   int,
   name varchar(100)
 );
 

@@ -15,9 +15,9 @@
 --
 
 create table person (
-  id int,
-  firstName varchar(100),
-  lastName varchar(100),
+  id         int,
+  firstName  varchar(100),
+  lastName   varchar(100),
   order_type varchar(100)
 );
 

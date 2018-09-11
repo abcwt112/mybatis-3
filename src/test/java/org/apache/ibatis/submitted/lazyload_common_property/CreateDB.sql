@@ -15,18 +15,18 @@
 --
 
 create table Child (
-  id int,
-  name varchar(100),
-  father_id int,
+  id              int,
+  name            varchar(100),
+  father_id       int,
   grand_father_id int
 );
 create table Father (
-  id int,
-  name varchar(100),
+  id              int,
+  name            varchar(100),
   grand_father_id int
 );
 create table GrandFather (
-  id int,
+  id   int,
   name varchar(100)
 );
 

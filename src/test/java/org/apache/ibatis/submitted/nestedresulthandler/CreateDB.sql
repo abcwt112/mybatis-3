@@ -18,16 +18,16 @@ drop table persons if exists;
 drop table items if exists;
 
 create table persons (
-  id int,
+  id   int,
   name varchar(20)
 );
 
 create table items (
-  id int,
+  id    int,
   owner int,
-  name varchar(20)
+  name  varchar(20)
 );
- 
+
 insert into persons (id, name) values (1, 'grandma');
 insert into persons (id, name) values (2, 'sister');
 insert into persons (id, name) values (3, 'brother');

@@ -17,9 +17,9 @@
 drop table permissions if exists;
 
 create table permissions (
-  resourceName varchar(20),
+  resourceName  varchar(20),
   principalName varchar(20),
-  permission varchar(20)
+  permission    varchar(20)
 );
 
 insert into permissions values ('resource1', 'user1', 'read');

@@ -16,70 +16,70 @@
 
 drop table if exists person;
 create table person (
-id int,
-name varchar(32),
-billing_address_id int,
-shipping_address_id int,
-room_id int
+  id                  int,
+  name                varchar(32),
+  billing_address_id  int,
+  shipping_address_id int,
+  room_id             int
 );
 
 drop table if exists address;
 create table address (
-id int,
-state varchar(32),
-city varchar(32),
-phone1_id int,
-phone2_id int,
-addr_type int,
-caution varchar(64)
+  id        int,
+  state     varchar(32),
+  city      varchar(32),
+  phone1_id int,
+  phone2_id int,
+  addr_type int,
+  caution   varchar(64)
 );
 
 drop table if exists zip;
 create table zip (
-state varchar(32),
-city varchar(32),
-zip_code int
+  state    varchar(32),
+  city     varchar(32),
+  zip_code int
 );
 
 drop table if exists phone;
 create table phone (
-id int,
-phone varchar(32),
-area_code varchar(2)
+  id        int,
+  phone     varchar(32),
+  area_code varchar(2)
 );
 
 drop table if exists pet;
 create table pet (
-id int,
-owner_id int,
-name varchar(32),
-room_id int
+  id       int,
+  owner_id int,
+  name     varchar(32),
+  room_id  int
 );
 
 drop table if exists state_bird;
 create table state_bird (
-state varchar(32),
-bird varchar(32)
+  state varchar(32),
+  bird  varchar(32)
 );
 
 drop table if exists room;
 create table room (
-room_id int,
-room_name varchar(32)
+  room_id   int,
+  room_name varchar(32)
 );
 
 drop table if exists brand;
 create table brand (
-id int,
-name varchar(32)
+  id   int,
+  name varchar(32)
 );
 
 -- make columns case sensitive
 drop table if exists product;
 create table product (
-"product_id" int,
-"product_name" varchar(32),
-brand_id int
+  "product_id"   int,
+  "product_name" varchar(32),
+  brand_id       int
 );
 
 insert into room (room_id, room_name) values (31, 'Sakura');

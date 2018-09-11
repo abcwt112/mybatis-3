@@ -15,12 +15,12 @@
 --
 
 create table person (
-  id int,
-  firstName varchar(100),
-  lastName varchar(100),
-  parent_id int default null,
+  id               int,
+  firstName        varchar(100),
+  lastName         varchar(100),
+  parent_id        int          default null,
   parent_firstName varchar(100) default null,
-  parent_lastName varchar(100) default null
+  parent_lastName  varchar(100) default null
 );
 
 INSERT INTO person (id, firstName, lastName)
