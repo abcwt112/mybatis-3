@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+    <settings>
+        <setting name="logImpl" value="STDOUT_LOGGING"/>
+    </settings>
+    <!--&lt;!&ndash; 注册属性文件 &ndash;&gt;-->
+    <!--<properties resource="jdbc.properties"/>-->
+    <!-- 配置MyBatis运行环境 -->
+    <environments default="development">
+        <environment id="development">
+            <transactionManager type="JDBC"></transactionManager>
+            <dataSource type="POOLED">
+                <property name="driver" value="com.mysql.jdbc.Driver"/>
+                <property name="url" value="jdbc:mysql://10.9.123.228:3306/data_prometheus?characterEncoding=utf8"/>
+                <property name="username" value="user_prometheus"/>
+                <property name="password" value="Gf6CVOUd3vCfHdY6v65p"/>
+            </dataSource>
+        </environment>
+    </environments>
+
+    <!-- 注册映射文件 -->
+    <mappers>
+        <mapper resource="mapper/UserMapper.xml"/>
+        <!-- <mapper resource="com/hcx/dao/mapper2.xml"/>  -->
+    </mappers>
+</configuration>
