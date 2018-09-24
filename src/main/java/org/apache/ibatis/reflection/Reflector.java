@@ -27,6 +27,7 @@ import java.util.*;
 /**
  * This class represents a cached set of class definition information that
  * allows for easy mapping between property names and getter/setter methods.
+ * 对应1个javaBean
  *
  * @author Clinton Begin
  */

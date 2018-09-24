@@ -19,8 +19,16 @@ public class MyTest {
         SqlSession session = sqlSessionFactory.openSession();
         try {
             UserMapper mapper = session.getMapper(UserMapper.class);
-            User u = mapper.selectByPrimaryKey(22);
+            User u = mapper.selectByPrimaryKey(1);
             System.out.println(u);
+
+            User u2 = mapper.selectByPrimaryKey(1);
+            System.out.println(u2);
+
+            SqlSession session2 = sqlSessionFactory.openSession();
+            UserMapper mapper2 = session2.getMapper(UserMapper.class);
+            User u3 = mapper2.selectByPrimaryKey(1);
+            System.out.println(u3);
         } finally {
             session.close();
         }

@@ -14,9 +14,9 @@
             <transactionManager type="JDBC"></transactionManager>
             <dataSource type="POOLED">
                 <property name="driver" value="com.mysql.jdbc.Driver"/>
-                <property name="url" value="jdbc:mysql://10.9.123.228:3306/data_prometheus?characterEncoding=utf8"/>
-                <property name="username" value="user_prometheus"/>
-                <property name="password" value="Gf6CVOUd3vCfHdY6v65p"/>
+                <property name="url" value="jdbc:mysql://139.224.12.60:3307/test?characterEncoding=utf8"/>
+                <property name="username" value="root"/>
+                <property name="password" value="Rs6ydDPcraaFrVhw"/>
             </dataSource>
         </environment>
     </environments>
