@@ -1,6 +1,7 @@
 package test.mapper;
 
 import org.apache.ibatis.annotations.*;
+import org.apache.ibatis.cache.impl.PerpetualCache;
 import test.model.User;
 
 import java.util.List;
@@ -29,14 +30,6 @@ public interface UserMapper {
 
     int insertSelective(User record);
 
-    @Select({
-            "select",
-            "id, user_id, user_name, real_name, email, creator_uid, modifier_uid, created_at, ",
-            "updated_at, del",
-            "from user",
-            "where id = #{id,jdbcType=INTEGER} and del = 0"
-    })
-    @ResultMap("test.mapper.UserMapper.BaseResultMap")
     User selectByPrimaryKey(Integer id);
 
     int updateByPrimaryKeySelective(User record);
