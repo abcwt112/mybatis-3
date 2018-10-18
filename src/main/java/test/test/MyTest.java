@@ -15,8 +15,8 @@ public class MyTest {
     public static SqlSessionFactory sqlSessionFactory;
 
     public static void main(String[] args) throws IOException {
-        firstLevelCache();
-//        secondLevelCache();
+//        firstLevelCache();
+        secondLevelCache();
     }
 
     public static void init(String where) {
