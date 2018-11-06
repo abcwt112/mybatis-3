@@ -47,4 +47,11 @@ public class PropertyParser {
             return "${" + content + "}";
         }
     }
+
+    public static void main(String[] args) {
+        Properties pro = new Properties();
+        pro.setProperty("haha", "hehe");
+        GenericTokenParser p = new GenericTokenParser("@", "@", new VariableTokenHandler(pro));
+        System.out.println(p.parse("abc @xixi@ qwe")); // abc ${xixi} qwe
+    }
 }

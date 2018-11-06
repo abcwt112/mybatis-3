@@ -81,7 +81,7 @@ public class XMLStatementBuilder extends BaseBuilder {
 
         // Include Fragments before parsing
         XMLIncludeTransformer includeParser = new XMLIncludeTransformer(configuration, builderAssistant);
-        includeParser.applyIncludes(context.getNode());
+        includeParser.applyIncludes(context.getNode()); // inclode节点处理,同时也会处理占位符${}
 
         // Parse selectKey after includes and remove them.
         processSelectKeyNodes(id, parameterTypeClass, langDriver);
