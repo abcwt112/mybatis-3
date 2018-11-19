@@ -70,8 +70,8 @@ public class XMLMapperBuilder extends BaseBuilder {
         this.resource = resource;
     }
 
-    public void parse() {
-        if (!configuration.isResourceLoaded(resource)) { // contains String
+    public void parse() { // 解析<Mapper>节点
+        if (!configuration.isResourceLoaded(resource)) { // contains String, 加载过的XML路径都会被记录下来
             configurationElement(parser.evalNode("/mapper"));
             configuration.addLoadedResource(resource);
             bindMapperForNamespace();
@@ -92,7 +92,7 @@ public class XMLMapperBuilder extends BaseBuilder {
             if (namespace == null || namespace.equals("")) {
                 throw new BuilderException("Mapper's namespace cannot be empty");
             }
-            builderAssistant.setCurrentNamespace(namespace);
+            builderAssistant.setCurrentNamespace(namespace); // 设置builder的namespace
             cacheRefElement(context.evalNode("cache-ref"));
             cacheElement(context.evalNode("cache"));
             parameterMapElement(context.evalNodes("/mapper/parameterMap"));
